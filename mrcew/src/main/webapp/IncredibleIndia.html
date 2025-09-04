@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Incredible India</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fff, #f0f0f0);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #FF9933, white, #138808);
+      text-align: center;
+      padding: 20px;
+      color: #000;
+      font-size: 2em;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      background: #222;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #FF9933;
+    }
+
+    section {
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #FF9933;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* States List */
+    .states-list div {
+      background: #fff;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 12px;
+      width: 80%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      transition: transform 0.3s;
+    }
+    .states-list div:hover {
+      transform: scale(1.05);
+    }
+
+    /* Flag Animation */
+    .flag {
+      width: 35px;
+      height: 20px;
+      border: 1px solid #000;
+      display: inline-block;
+      animation: wave 2s infinite;
+      margin-left: 10px;
+    }
+
+    .saffron { background: #FF9933; height: 33%; }
+    .white { background: #fff; height: 33%; position: relative; }
+    .green { background: #138808; height: 34%; }
+    .chakra {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #000080;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @keyframes wave {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Culture cards */
+    .culture-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      color: #138808;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🇮🇳 Incredible India Mini-Website</header>
+
+  <nav>
+    <a href="#states">States & UT</a>
+    <a href="#culture">Culture & Heritage</a>
+    <a href="#greatness">Greatness</a>
+  </nav>
+
+  <!-- Section 1: States and Capitals -->
+  <section id="states">
+    <h2>States & Union Territories with Capitals</h2>
+    <div class="states-list">
+      <div>Telangana - Hyderabad <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+      <div>Maharashtra - Mumbai <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+      <div>Karnataka - Bengaluru <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+      <div>Tamil Nadu - Chennai <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+      <div>Delhi - New Delhi <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+      <div>West Bengal - Kolkata <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+      <div>Kerala - Thiruvananthapuram <span class="flag"><div class="saffron"></div><div class="white"><div class="chakra"></div></div><div class="green"></div></span></div>
+    </div>
+  </section>
+
+  <!-- Section 2: Culture & Heritage -->
+  <section id="culture">
+    <h2>Culture & Heritage of India</h2>
+    <div class="culture-grid">
+      <div class="card">
+        <h3>Festivals</h3>
+        <p>India is known for vibrant festivals like Diwali, Holi, Eid, Christmas, Pongal, and Durga Puja that symbolize unity in diversity.</p>
+      </div>
+      <div class="card">
+        <h3>Architecture</h3>
+        <p>From the Taj Mahal to ancient temples of Khajuraho and Konark, India's architecture reflects its cultural richness.</p>
+      </div>
+      <div class="card">
+        <h3>Dance & Music</h3>
+        <p>Bharatanatyam, Kathak, Kuchipudi, and Carnatic/Hindustani music are celebrated worldwide for their grace and depth.</p>
+      </div>
+      <div class="card">
+        <h3>Food</h3>
+        <p>India offers diverse cuisines like spicy curries, biryanis, dosas, sweets, and street foods, each region offering unique flavors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Greatness of India -->
+  <section id="greatness">
+    <h2>The Greatness of India</h2>
+    <div class="culture-grid">
+      <div class="card">
+        <h3>Ancient Knowledge</h3>
+        <p>India gave the world Yoga, Ayurveda, Astronomy, and the concept of Zero. Its ancient texts hold wisdom for humanity.</p>
+      </div>
+      <div class="card">
+        <h3>Unity in Diversity</h3>
+        <p>India stands as a shining example of many cultures, religions, and languages co-existing in harmony.</p>
+      </div>
+      <div class="card">
+        <h3>Economic Power</h3>
+        <p>As the 5th largest economy, India is a hub of IT, space exploration, and innovation, balancing tradition with modernity.</p>
+      </div>
+      <div class="card">
+        <h3>Natural Beauty</h3>
+        <p>From the Himalayas to Kerala backwaters, deserts of Rajasthan to the Sundarbans, India's landscapes are breathtaking.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    🇮🇳 Proud to be Indian | Designed with ❤️ using HTML & CSS  
+  </footer>
+
+</body>
+</html>
